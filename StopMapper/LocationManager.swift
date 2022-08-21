@@ -20,6 +20,10 @@ class LocationManager: NSObject, ObservableObject {
   @Published var location: CLLocation? {
     willSet { objectWillChange.send() }
   }
+    
+    @Published var currentRegion: CLRegion? {
+        willSet {objectWillChange.send()}
+    }
 
   override init() {
       print("init running")
@@ -42,6 +46,25 @@ class LocationManager: NSObject, ObservableObject {
         
         return "\(lat2),\(long2),\(lat1),\(long1)"
     }
+    
+    func startNodeRegionMonitoring(nodes: [traffic_node]){
+        if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+            for node in nodes {
+                let node_center = CLLocationCoordinate2D(latitude: node.lat, longitude: node.lon)
+                let region = CLCircularRegion(center: node_center, radius: 10, identifier: String(node.id))
+                region.notifyOnEntry = true
+                region.notifyOnExit = true
+                self.locationManager.startMonitoring(for: region)
+            }
+        }
+    }
+    
+    func clearNodeRegionMonitoring(){
+        let monitored_nodes = CLLocationManager().monitoredRegions
+        for region in monitored_nodes {
+            CLLocationManager().stopMonitoring(for: region)
+        }
+    }
 }
 
 extension LocationManager: CLLocationManagerDelegate {
@@ -52,5 +75,15 @@ extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         self.location = location
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        self.currentRegion = region
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        if self.currentRegion == region {
+            self.currentRegion = nil
+        }
     }
 }

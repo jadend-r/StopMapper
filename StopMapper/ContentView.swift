@@ -31,8 +31,8 @@ struct ContentView: View {
             Spacer()
             Text("Bbox: \(AppLogic.bbox)")
             Spacer()
-            //Text("data from overpass: \(AppLogic.data)")
-            //Spacer()
+            Text("Node within 10 meters: \(lm.currentRegion?.identifier ?? "N/A")")
+            Spacer()
         }
         .padding()
         if let node_data = AppLogic.data {
