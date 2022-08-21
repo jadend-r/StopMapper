@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7280A6928AF7B4B00FDAC93 /* StopMapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7280A6828AF7B4B00FDAC93 /* StopMapperApp.swift */; };
+		B7280A6B28AF7B4B00FDAC93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7280A6A28AF7B4B00FDAC93 /* ContentView.swift */; };
+		B7280A6D28AF7B4D00FDAC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7280A6C28AF7B4D00FDAC93 /* Assets.xcassets */; };
+		B7280A7128AF7B4D00FDAC93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7280A7028AF7B4D00FDAC93 /* Preview Assets.xcassets */; };
+		B7280A7B28AF7B4D00FDAC93 /* StopMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7280A7A28AF7B4D00FDAC93 /* StopMapperTests.swift */; };
+		B7280A8528AF7B4D00FDAC93 /* StopMapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7280A8428AF7B4D00FDAC93 /* StopMapperUITests.swift */; };
+		B7280A8728AF7B4D00FDAC93 /* StopMapperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7280A8628AF7B4D00FDAC93 /* StopMapperUITestsLaunchTests.swift */; };
+		B7280A9428AF7B6A00FDAC93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7280A9328AF7B6A00FDAC93 /* LocationManager.swift */; };
+		B7A330F128AFFEC200F049B2 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A330F028AFFEC200F049B2 /* RequestManager.swift */; };
+		B7A330F328B0036400F049B2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A330F228B0036400F049B2 /* Logic.swift */; };
+		B7CDA8B328B1E9A7007B5FFF /* traffic_node.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDA8B228B1E9A7007B5FFF /* traffic_node.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7280A7728AF7B4D00FDAC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7280A5D28AF7B4B00FDAC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7280A6428AF7B4B00FDAC93;
+			remoteInfo = StopMapper;
+		};
+		B7280A8128AF7B4D00FDAC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7280A5D28AF7B4B00FDAC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7280A6428AF7B4B00FDAC93;
+			remoteInfo = StopMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7280A6528AF7B4B00FDAC93 /* StopMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7280A6828AF7B4B00FDAC93 /* StopMapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMapperApp.swift; sourceTree = "<group>"; };
+		B7280A6A28AF7B4B00FDAC93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7280A6C28AF7B4D00FDAC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7280A6E28AF7B4D00FDAC93 /* StopMapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StopMapper.entitlements; sourceTree = "<group>"; };
+		B7280A7028AF7B4D00FDAC93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7280A7628AF7B4D00FDAC93 /* StopMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7280A7A28AF7B4D00FDAC93 /* StopMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMapperTests.swift; sourceTree = "<group>"; };
+		B7280A8028AF7B4D00FDAC93 /* StopMapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopMapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7280A8428AF7B4D00FDAC93 /* StopMapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMapperUITests.swift; sourceTree = "<group>"; };
+		B7280A8628AF7B4D00FDAC93 /* StopMapperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMapperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7280A9328AF7B6A00FDAC93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B7280A9528AF858100FDAC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B7A330F028AFFEC200F049B2 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		B7A330F228B0036400F049B2 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		B7CDA8B228B1E9A7007B5FFF /* traffic_node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = traffic_node.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7280A6228AF7B4B00FDAC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7280A7328AF7B4D00FDAC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7280A7D28AF7B4D00FDAC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7280A5C28AF7B4B00FDAC93 = {
+			isa = PBXGroup;
+			children = (
+				B7280A6728AF7B4B00FDAC93 /* StopMapper */,
+				B7280A7928AF7B4D00FDAC93 /* StopMapperTests */,
+				B7280A8328AF7B4D00FDAC93 /* StopMapperUITests */,
+				B7280A6628AF7B4B00FDAC93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7280A6628AF7B4B00FDAC93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7280A6528AF7B4B00FDAC93 /* StopMapper.app */,
+				B7280A7628AF7B4D00FDAC93 /* StopMapperTests.xctest */,
+				B7280A8028AF7B4D00FDAC93 /* StopMapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7280A6728AF7B4B00FDAC93 /* StopMapper */ = {
+			isa = PBXGroup;
+			children = (
+				B7280A9528AF858100FDAC93 /* Info.plist */,
+				B7280A6828AF7B4B00FDAC93 /* StopMapperApp.swift */,
+				B7280A6A28AF7B4B00FDAC93 /* ContentView.swift */,
+				B7280A6C28AF7B4D00FDAC93 /* Assets.xcassets */,
+				B7280A6E28AF7B4D00FDAC93 /* StopMapper.entitlements */,
+				B7280A6F28AF7B4D00FDAC93 /* Preview Content */,
+				B7280A9328AF7B6A00FDAC93 /* LocationManager.swift */,
+				B7A330F028AFFEC200F049B2 /* RequestManager.swift */,
+				B7A330F228B0036400F049B2 /* Logic.swift */,
+				B7CDA8B228B1E9A7007B5FFF /* traffic_node.swift */,
+			);
+			path = StopMapper;
+			sourceTree = "<group>";
+		};
+		B7280A6F28AF7B4D00FDAC93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B7280A7028AF7B4D00FDAC93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7280A7928AF7B4D00FDAC93 /* StopMapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7280A7A28AF7B4D00FDAC93 /* StopMapperTests.swift */,
+			);
+			path = StopMapperTests;
+			sourceTree = "<group>";
+		};
+		B7280A8328AF7B4D00FDAC93 /* StopMapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7280A8428AF7B4D00FDAC93 /* StopMapperUITests.swift */,
+				B7280A8628AF7B4D00FDAC93 /* StopMapperUITestsLaunchTests.swift */,
+			);
+			path = StopMapperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7280A6428AF7B4B00FDAC93 /* StopMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7280A8A28AF7B4D00FDAC93 /* Build configuration list for PBXNativeTarget "StopMapper" */;
+			buildPhases = (
+				B7280A6128AF7B4B00FDAC93 /* Sources */,
+				B7280A6228AF7B4B00FDAC93 /* Frameworks */,
+				B7280A6328AF7B4B00FDAC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StopMapper;
+			productName = StopMapper;
+			productReference = B7280A6528AF7B4B00FDAC93 /* StopMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7280A7528AF7B4D00FDAC93 /* StopMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7280A8D28AF7B4D00FDAC93 /* Build configuration list for PBXNativeTarget "StopMapperTests" */;
+			buildPhases = (
+				B7280A7228AF7B4D00FDAC93 /* Sources */,
+				B7280A7328AF7B4D00FDAC93 /* Frameworks */,
+				B7280A7428AF7B4D00FDAC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7280A7828AF7B4D00FDAC93 /* PBXTargetDependency */,
+			);
+			name = StopMapperTests;
+			productName = StopMapperTests;
+			productReference = B7280A7628AF7B4D00FDAC93 /* StopMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7280A7F28AF7B4D00FDAC93 /* StopMapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7280A9028AF7B4D00FDAC93 /* Build configuration list for PBXNativeTarget "StopMapperUITests" */;
+			buildPhases = (
+				B7280A7C28AF7B4D00FDAC93 /* Sources */,
+				B7280A7D28AF7B4D00FDAC93 /* Frameworks */,
+				B7280A7E28AF7B4D00FDAC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7280A8228AF7B4D00FDAC93 /* PBXTargetDependency */,
+			);
+			name = StopMapperUITests;
+			productName = StopMapperUITests;
+			productReference = B7280A8028AF7B4D00FDAC93 /* StopMapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7280A5D28AF7B4B00FDAC93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					B7280A6428AF7B4B00FDAC93 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					B7280A7528AF7B4D00FDAC93 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = B7280A6428AF7B4B00FDAC93;
+					};
+					B7280A7F28AF7B4D00FDAC93 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = B7280A6428AF7B4B00FDAC93;
+					};
+				};
+			};
+			buildConfigurationList = B7280A6028AF7B4B00FDAC93 /* Build configuration list for PBXProject "StopMapper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7280A5C28AF7B4B00FDAC93;
+			productRefGroup = B7280A6628AF7B4B00FDAC93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7280A6428AF7B4B00FDAC93 /* StopMapper */,
+				B7280A7528AF7B4D00FDAC93 /* StopMapperTests */,
+				B7280A7F28AF7B4D00FDAC93 /* StopMapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7280A6328AF7B4B00FDAC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7280A7128AF7B4D00FDAC93 /* Preview Assets.xcassets in Resources */,
+				B7280A6D28AF7B4D00FDAC93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7280A7428AF7B4D00FDAC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7280A7E28AF7B4D00FDAC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7280A6128AF7B4B00FDAC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7280A6B28AF7B4B00FDAC93 /* ContentView.swift in Sources */,
+				B7A330F328B0036400F049B2 /* Logic.swift in Sources */,
+				B7280A6928AF7B4B00FDAC93 /* StopMapperApp.swift in Sources */,
+				B7280A9428AF7B6A00FDAC93 /* LocationManager.swift in Sources */,
+				B7A330F128AFFEC200F049B2 /* RequestManager.swift in Sources */,
+				B7CDA8B328B1E9A7007B5FFF /* traffic_node.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7280A7228AF7B4D00FDAC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7280A7B28AF7B4D00FDAC93 /* StopMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7280A7C28AF7B4D00FDAC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7280A8528AF7B4D00FDAC93 /* StopMapperUITests.swift in Sources */,
+				B7280A8728AF7B4D00FDAC93 /* StopMapperUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7280A7828AF7B4D00FDAC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7280A6428AF7B4B00FDAC93 /* StopMapper */;
+			targetProxy = B7280A7728AF7B4D00FDAC93 /* PBXContainerItemProxy */;
+		};
+		B7280A8228AF7B4D00FDAC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7280A6428AF7B4B00FDAC93 /* StopMapper */;
+			targetProxy = B7280A8128AF7B4D00FDAC93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B7280A8828AF7B4D00FDAC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7280A8928AF7B4D00FDAC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B7280A8B28AF7B4D00FDAC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StopMapper/StopMapper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StopMapper/Preview Content\"";
+				DEVELOPMENT_TEAM = LZZPM8A8XS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopMapper/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To track stoplight location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To track stoplight locations";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To track stoplight location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To track stoplight location";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StopMapper.StopMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7280A8C28AF7B4D00FDAC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StopMapper/StopMapper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StopMapper/Preview Content\"";
+				DEVELOPMENT_TEAM = LZZPM8A8XS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopMapper/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To track stoplight location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To track stoplight locations";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To track stoplight location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To track stoplight location";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StopMapper.StopMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7280A8E28AF7B4D00FDAC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZZPM8A8XS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StopMapper.StopMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopMapper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StopMapper";
+			};
+			name = Debug;
+		};
+		B7280A8F28AF7B4D00FDAC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZZPM8A8XS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StopMapper.StopMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopMapper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StopMapper";
+			};
+			name = Release;
+		};
+		B7280A9128AF7B4D00FDAC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZZPM8A8XS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StopMapper.StopMapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StopMapper;
+			};
+			name = Debug;
+		};
+		B7280A9228AF7B4D00FDAC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZZPM8A8XS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = StopMapper.StopMapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StopMapper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7280A6028AF7B4B00FDAC93 /* Build configuration list for PBXProject "StopMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7280A8828AF7B4D00FDAC93 /* Debug */,
+				B7280A8928AF7B4D00FDAC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7280A8A28AF7B4D00FDAC93 /* Build configuration list for PBXNativeTarget "StopMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7280A8B28AF7B4D00FDAC93 /* Debug */,
+				B7280A8C28AF7B4D00FDAC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7280A8D28AF7B4D00FDAC93 /* Build configuration list for PBXNativeTarget "StopMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7280A8E28AF7B4D00FDAC93 /* Debug */,
+				B7280A8F28AF7B4D00FDAC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7280A9028AF7B4D00FDAC93 /* Build configuration list for PBXNativeTarget "StopMapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7280A9128AF7B4D00FDAC93 /* Debug */,
+				B7280A9228AF7B4D00FDAC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7280A5D28AF7B4B00FDAC93 /* Project object */;
+}
