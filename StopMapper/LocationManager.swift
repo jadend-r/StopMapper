@@ -51,7 +51,7 @@ class LocationManager: NSObject, ObservableObject {
         if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
             for node in nodes {
                 let node_center = CLLocationCoordinate2D(latitude: node.lat, longitude: node.lon)
-                let region = CLCircularRegion(center: node_center, radius: 10, identifier: String(node.id))
+                let region = CLCircularRegion(center: node_center, radius: 50, identifier: String(node.id))
                 region.notifyOnEntry = true
                 region.notifyOnExit = true
                 self.locationManager.startMonitoring(for: region)
@@ -60,9 +60,9 @@ class LocationManager: NSObject, ObservableObject {
     }
     
     func clearNodeRegionMonitoring(){
-        let monitored_nodes = CLLocationManager().monitoredRegions
+        let monitored_nodes = self.locationManager.monitoredRegions
         for region in monitored_nodes {
-            CLLocationManager().stopMonitoring(for: region)
+            self.locationManager.stopMonitoring(for: region)
         }
     }
 }

@@ -31,7 +31,7 @@ struct ContentView: View {
             Spacer()
             Text("Bbox: \(AppLogic.bbox)")
             Spacer()
-            Text("Node within 10 meters: \(lm.currentRegion?.identifier ?? "N/A")")
+            Text("Node within 50 meters: \(lm.currentRegion?.identifier ?? "N/A")")
             Spacer()
         }
         .padding()
